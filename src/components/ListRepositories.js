@@ -46,7 +46,7 @@ export default class ListRepositories extends Component {
             </Text>
           </View>
         }
-        {this.state.repositories.map((repository, index) => <Repository key={index} repository={repository} />)}
+        {this.state.repositories && this.state.repositories.map((repository, index) => <Repository key={index} repository={repository} />)}
       </View>
     );
   }
