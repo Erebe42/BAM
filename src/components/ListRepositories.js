@@ -16,7 +16,7 @@ export default class ListRepositories extends Component {
 
   componentDidMount() {
     axios({
-      url: 'http://localhost:4000/graphql',
+      url: 'https://bam-api-yanis.herokuapp.com/graphql',
       method: 'post',
       data: {
         query: `
